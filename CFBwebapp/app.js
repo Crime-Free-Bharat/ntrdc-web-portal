@@ -13,10 +13,7 @@ app.use(require("./router/routes"));
 // ==================================== variable use =====================================
 const port = process.env.PORT || 5000;
 
-app.get("/", (req, res) => {
-  console.log("ha bhia me hi get hu");
-  res.send("hello bhia me hi hu get home vala ");
-});
+
 
 app.get("/cors", (req, res) => {
   res.set("Access-Control-Allow-Origin", "*");
