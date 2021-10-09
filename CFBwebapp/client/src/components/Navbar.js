@@ -2,14 +2,17 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle";
+import "sweetalert2/dist/sweetalert2.js";
+import "sweetalert2/dist/sweetalert2.all";
 import logo from "../img/logo2.png";
+
 const Navbar = () => {
   return (
     <>
       <header>
         <div className="nav1">
           <p>
-            DEPARTMENT OF THE NATIONAL TECHNICAL RESEARCH {'&'} DEVELOPMENT
+            DEPARTMENT OF THE NATIONAL TECHNICAL RESEARCH {"&"} DEVELOPMENT
             COMMITTEE
           </p>
 
@@ -55,6 +58,13 @@ const Navbar = () => {
           </NavLink>
 
           <div className="menu">
+            <NavLink to="/">
+              <div className="home nav__items">
+              <i class="bi bi-house-door"></i>
+                <br />
+                <p>Home</p>
+              </div>
+            </NavLink>
             <NavLink to="/about">
               <div className="about nav__items">
                 <i className="bi bi-person-lines-fill"></i>

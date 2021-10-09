@@ -1,15 +1,15 @@
 import React from "react";
 import Footer from "../../components/Footer";
 import Navbar from "../../components/Navbar";
-import Signup from "../../components/user_auth/Signup_pages/signup_vol";
-const signup = () => {
+import Volunteer from "../../components/footer_pg/Volunteer";
+const vol = () => {
   return (
     <>
       <Navbar />
-      <Signup />
+      <Volunteer />
       <Footer />
     </>
   );
 };
 
-export default signup;
+export default vol;

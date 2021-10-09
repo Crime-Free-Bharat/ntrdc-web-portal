@@ -1,5 +1,6 @@
 import React from "react";
-import mailSent from "../../img/undraw_Mail_sent_re_0ofv.svg";
+import { NavLink } from "react-router-dom";
+import mailSent from "../../../img/undraw_Mail_sent_re_0ofv.svg";
 const Email_Res = () => {
   return (
     <>
@@ -29,11 +30,10 @@ const Email_Res = () => {
           <button className="Resend1">Send new verification link</button>
         </div>
         <div className="contacsupp">
-          Still not seeing it?{" "}
-          <a href="#" className="anchor">
-            {" "}
+          Still not seeing it?
+          <NavLink to="#" className="anchor">
             Contact Support
-          </a>
+          </NavLink>
         </div>
       </div>
     </>
